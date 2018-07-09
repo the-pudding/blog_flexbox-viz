@@ -1,0 +1,14 @@
+<section class='need'>
+  <h3>{{copy.need-title}}</h3>
+  <div class='disclaimer'>
+    <p class='disclaimer-text'>{{{copy.need-disclaimer}}}</p>
+  </div>
+  {{#each copy.need}}
+  <p class='prose'>{{{value}}}</p>
+  {{/each}}
+  <ul>
+    {{#each copy.need-list}}
+      <li>{{{this}}}</li>
+    {{/each}}
+  </ul>
+</section>

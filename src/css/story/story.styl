@@ -1,1 +1,50 @@
 /* CUSTOM STORY STYLE */
+section
+  max-width $column-width
+  margin 0 auto
+
+.prose
+  code
+    background-color $secondary
+    color $bg
+    font-family $mono
+    padding 0.25em 0.5em
+    font-size 0.8em
+    font-weight 600
+    border-radius 2px
+
+span
+  &.question
+    color $primary
+    font-weight 600
+
+.disclaimer-text
+  margin 1rem auto
+  padding 1rem 1.5rem
+  background-color lighten($tertiary, 10)
+  max-width $column-width - 2rem
+  border-left 4px solid $off-black
+
+ul
+  max-width $column-width
+  margin 1rem auto
+  padding 0 1rem
+
+  li
+    margin 1rem
+    line-height 1.7
+    code
+      background-color $secondary
+      color $bg
+      font-family $mono
+      padding 0.25em 0.5em
+      font-size 0.8em
+      font-weight 600
+      border-radius 2px
+
+pre
+	display block
+	margin 1.5rem auto
+	max-width 38rem
+	width 90%
+	set-type-size(small)
