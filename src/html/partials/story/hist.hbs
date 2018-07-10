@@ -1,0 +1,23 @@
+<section class='hist'>
+  <h3>{{copy.hist-title}}</h3>
+  {{#each copy.hist}}
+    <p class='prose'>{{{value}}}</p>
+  {{/each}}
+  <img class='img-desktop' src='assets/images/hist.png'>
+
+  <h4>HTML</h4>
+  <p class='prose'>{{{copy.hist-html}}}</p>
+  <pre data-src='assets/prism/hist.html'></pre>
+
+  <h4>JavaScript</h4>
+  <p class='prose'>{{{copy.hist-js}}}</p>
+  <pre data-src='assets/prism/hist.js'></pre>
+
+  <h4>CSS</h4>
+  <p class='prose'>{{{copy.hist-css}}}</p>
+  <pre data-src='assets/prism/hist.css'></pre>
+
+  <h4>The Results</h4>
+  <p class='prose'>{{{copy.hist-results}}}</p>
+  <figure class='hist-chart'></figure>
+</section>

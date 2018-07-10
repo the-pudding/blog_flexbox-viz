@@ -1,11 +1,7 @@
-<section class='work'>
-  <h3>{{copy.work-title}}</h3>
-
-  {{#each copy.work}}
-    <p class='prose'>{{{value}}}</p>
-  {{/each}}
-
-  <img class='img-desktop' src='assets/images/waffle.png'>
+<section class='stack'>
+  <h3>{{copy.stack-title}}</h3>
+  <p class='prose'>{{{copy.stack}}}</p>
+  <img src='assets/images/stack.png' class='img-desktop'>
 
   <h4>HTML</h4>
   <p class='prose'>{{{copy.waffle-html}}}</p>
@@ -22,5 +18,5 @@
 
   <h4>The Results</h4>
   <p class='prose'>{{{copy.waffle-results}}}</p>
-  {{> story/waffle }}
+  <div class='stack-chart'>
 </section>
