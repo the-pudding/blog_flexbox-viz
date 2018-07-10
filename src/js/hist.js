@@ -23,7 +23,7 @@ const nest = d3.nest()
   .key(d => d.state)
   .entries(location)
 
-  console.log({location, nest})
+  console.log(nest)
 
 // select the figure element
 const hist = d3.select('.hist-chart')
@@ -52,5 +52,3 @@ const label = group
   .enter()
   .append('text')
   .text(d => d.key)
-//
-// console.log({synth})

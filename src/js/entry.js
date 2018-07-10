@@ -4,6 +4,7 @@ import isMobile from './utils/is-mobile';
 import graphic from './graphic';
 import work from './work'
 import hist from './hist'
+import stack from './stack'
 
 const $body = d3.select('body');
 let previousWidth = 0;
