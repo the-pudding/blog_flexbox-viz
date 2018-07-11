@@ -1,0 +1,37 @@
+.stack-chart
+  display flex
+  flex-direction row
+  align-items: flex-end
+  margin 0 auto
+  width 200px
+
+  .group
+    display flex
+    flex-direction column-reverse
+    margin 0.5rem 0
+    width 45px
+    height 230px
+    //padding 0 1rem
+    align-items: center;
+
+    .block
+      width 15px
+      order 1
+      background-color: $gray
+      margin-bottom 0rem
+
+    .label
+      order 0
+      font-family Atlas Grotesk Web, sans-serif
+      set-type-size('small', true)
+      //margin-top 0.5rem
+      padding-top 0.25rem
+      border-top 1px solid $gray
+      width 50px
+      text-align center
+
+    .count
+      font-family Atlas Grotesk Web, sans-serif
+      set-type-size('x-small', true)
+      color $gray-dark
+      order 5
