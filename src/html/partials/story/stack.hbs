@@ -1,4 +1,4 @@
-<section class='stack'>
+<section class='stack' id='stack'>
   <h3>{{copy.stack-title}}</h3>
   <p class='prose'>{{{copy.stack}}}</p>
   <img src='assets/images/stack.png' class='img-desktop'>
@@ -13,9 +13,10 @@
   <pre data-src='assets/prism/stack.js'></pre>
 
   <h4>CSS</h4>
-  <p class='prose'>{{{copy.stack-css}}}</p>
+  {{#each copy.stack-css}}
+    <p class='prose'>{{{value}}}</p>
+  {{/each}}
   <pre data-src='assets/prism/stack.css'></pre>
-  <p class='prose'>{{{copy.stack-css-post}}}</p>
 
   <h4>The Results</h4>
   <p class='prose'>{{{copy.stack-results}}}</p>
