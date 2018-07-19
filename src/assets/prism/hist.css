@@ -1,17 +1,17 @@
-.hist{
-  display: flex
+.hist {
+  display: flex;
   flex-direction: row;
   align-items: flex-end;
 }
 
-.group{
+.group {
   display: flex;
   flex-direction: column;
   margin: 0 0.5rem;
 }
 
-.block{
+.block {
   width: 20px;
   height: 20px;
-  background-color: #FE4A49
+  background-color: #fe4a49;
 }
