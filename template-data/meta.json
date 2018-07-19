@@ -1,13 +1,13 @@
 {
-	"title": "Making Data Viz with d3, Flexbox, and a Serious Lack of SVG",
+	"title": "Making Data Viz Without SVG Using D3 and Flexbox",
 	"description":
 		"Bye bye tricky alignments",
-	"url": "https://pudding.cool/year/month/name/",
-	"keywords": "tk",
+	"url": "https://pudding.cool/process/flexbox-layout/",
+	"keywords": "flexbox, d3, d3.js, stacked bar chart, waffle chart, histogram",
 	"imgFacebook":
-		"https://pudding.cool/year/month/name/assets/social/social-facebook.jpg",
+		"https://pudding.cool/process/flexbox-layout/assets/social/social-facebook.jpg",
 	"imgTwitter":
-		"https://pudding.cool/year/month/name/assets/social/social-twitter.jpg",
+		"https://pudding.cool/process/flexbox-layout/assets/social/social-twitter.jpg",
 	"author": {
 		"name": "Amber Thomas",
 		"url": "https://pudding.cool/author/amber-thomas/",
