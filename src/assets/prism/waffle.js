@@ -1,19 +1,15 @@
 // Select your div
-const waffle = d3.select('.waffle')
+const waffle = d3.select('.waffle');
 
-// Create an array with numbers 0 - 100
-const numbers = [...Array(100).keys()]
+// Create an array with numbers 0 - 99
+const numbers = d3.range(100);
 
 // For each item in the array, add a div element
-const block = waffle
-  .selectAll('.block')
-  .data(numbers)
-  .enter()
-  .append('div')
-  .attr('class', 'block')
-  // if the number is less than 5, color it red
-  // otherwise, color it gray
-  .style('background-color', function(d){
-    if (d < 5) return `#FE4A49`
-    else return `#CCCCCC`
-  })
+// if the number is < 5, color it red, otherwise gray
+waffle
+	.selectAll('.block')
+	.data(numbers)
+	.enter()
+	.append('div')
+	.attr('class', 'block')
+	.style('background-color', d => (d < 5 ? '#FE4A49' : '#CCCCCC'));
