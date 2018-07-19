@@ -1,12 +1,18 @@
 <div class='intro'>
-	<h1 class='intro__hed tk-canela'>{{copy.hed}}</h1>
-	<p class='intro__dek tk-atlas'>{{copy.dek}}</p>
-	<p class='intro__byline tk-atlas'>By
-		<a href='{{meta.author.url}}' target='_blank'>
-			<strong>{{meta.author.name}}</strong>
-		</a>
-	</p>
-
+	<div class='intro-bg'>
+		<div class='intro-text'>
+			<h1 class='intro__hed tk-canela'>{{copy.hed}}</h1>
+			<p class='intro__dek tk-atlas'>{{copy.dek}}</p>
+			<div class='intro-by-date'>
+				<p class='intro__byline tk-atlas'>By
+					<a href='{{meta.author.url}}' target='_blank'>
+						<strong>{{meta.author.name}}</strong>
+					</a>
+				</p>
+				<p class='intro__date tk-atlas'>July 2018</p>
+			</div>
+		</div>
+	</div>
 	{{#each copy.intro}}
 		<p class='prose'>{{{value}}}</p>
 	{{/each}}

@@ -2,29 +2,53 @@
 	margin 0 auto
 	padding 4rem 1rem 1.5rem 1rem
 
-	&__hed
-		max-width 40rem
+	&-bg
+		background-image url('assets/images/intro-bg.png')
+		background-size auto 100%
+		border-bottom 1px solid $off-black
+		margin-bottom 4rem
+		//background-image url('assets/images/hist.png')
+
+	&-text
+		max-width 35rem
 		margin 0 auto
-		padding-top 5rem
+		background-color rgba($white, 0.85)
+
+
+
+	&__hed
+		// max-width 35rem
+		// margin 0 auto
+		padding-top 3rem
 		font-weight 400
-		text-align center
+		text-align left
+		background-color: $white
 		set-type-size('xx-large', true)
 		+mq('bp-3')
 			set-type-size('xxx-large', true)
 		+mq('bp-5')
-			set-type-size('xxxx-large', true)
-
-	&__byline
-		max-width $column-width
-		margin 0 auto
-		padding-top 5rem
-		padding-bottom 1.5rem
-		text-align center
-		set-type-size('small', true)
+			set-type-size('xxx-large', true)
 
 	&__dek
-		max-width $column-width
-		margin 0 auto
-		padding-top 1.5rem
-		text-align center
+		// max-width $column-width
+		// margin 0 auto
+		padding-top 1rem
+		text-align left
 		set-type-size('medium', true)
+		//background-color: $white
+	&-by-date
+		display flex
+		flex-direction row
+		align-items: baseline;
+		justify-content: space-between;
+		.intro__date
+			set-type-size('small', true)
+
+		.intro__byline
+			// max-width $column-width
+			// margin 0 auto
+			padding-top 1rem
+			padding-bottom 1.5rem
+			text-align left
+			set-type-size('small', true)
+			//background-color: $white
